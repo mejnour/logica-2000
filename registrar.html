@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+
+	<title>Registrar</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./node_modules/js-base64/base64.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	<script>
+
+		//import {Base64} from 'js-base64'
+        // Initialize Firebase
+        let config = {
+            apiKey: "AIzaSyAa3GMkmJv0fH-5m-Nnl6GxZ2CeCg3Vdd4",
+            authDomain: "andrei-s-razor.firebaseapp.com",
+            databaseURL: "https://andrei-s-razor.firebaseio.com",
+            projectId: "andrei-s-razor",
+            storageBucket: "",
+            messagingSenderId: "43473021256"
+        };
+        firebase.initializeApp(config);
+
+        var database = firebase.database();
+
+        $( document ).ready(function() {
+            $( "#cadastrarConta" ).click(function( event ) {
+                let name = $("#nomePerfil").val();
+                let email = $("#registrarEmail").val();
+                let password = $("#registrarSenha").val();
+                let confirmPassword = $("#confirmarSenha").val();
+                let ocupacao = $('input[name=ocupacao]:checked').val();
+
+
+
+                if(password === confirmPassword){
+                    firebase.auth().createUserWithEmailAndPassword(email, password)
+						.then(() => {
+						    database = database.ref("users").child(Base64.encode(email)).set({
+								name,
+								email,
+								ocupacao
+							}).then(() => {
+							    alert("Usuário cadastrado com sucesso!");
+								$(location).attr('href', './login.html');
+							}).catch(error => {
+                                alert(error.code);
+							});
+						})
+						.catch(function(error) {
+                        // Handle Errors here.
+                        let errorCode = error.code;
+                        let errorMessage = error.message;
+                        alert(errorCode +"\n"+errorMessage);
+                        // ...
+                    });
+				}else
+				    alert("Senhas não conferem!");
+
+            });
+        });
+
+	</script>
+
+	<style type="text/css">
+
+		@media screen and (max-width: 767px){
+
+		}
+
+		html, body{
+			height:100%;
+		}
+
+	</style>
+
+</head>
+<body background="img/background.jpg" style="background-repeat: no-repeat; background-size: cover; overflow: auto;">
+
+	<script src="navibar.js"></script>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4"></div>
+
+			<div class="col-md-4" style="margin-top: 5%; margin-bottom: 5%; padding-bottom: 5px; background-color: rgba(255, 255, 255, 0.1); border-radius: 10px 10px 10px 10px; color: white;">
+
+				<form style="padding-top: 10%; color: white" align="center">
+
+					<div class="form-group">
+						<label for="nomePerfil">Defina seu nome do perfil</label>
+						<input type="text" class="form-control" id="nomePerfil" placeholder="Digite seu nome">
+					</div>
+
+					<div class="form-group">
+						<label for="registrarEmail">Defina o e-mail</label>
+						<input type="email" class="form-control" id="registrarEmail" placeholder="Digite seu e-mail">
+					</div>
+
+					<div class="form-group">
+						<label for="registrarSenha">Defina uma senha</label>
+						<input type="password" class="form-control" id="registrarSenha" placeholder="Digite sua senha">
+					</div>
+
+					<div class="form-group">
+						<label for="confirmarSenha">Digite novamente sua senha</label>
+						<input type="password" class="form-control" id="confirmarSenha" placeholder="Digite sua senha">
+					</div>
+
+					<div class="radio-inline">
+						<input class="form-check-input" type="radio" name="ocupacao" id="radioEstudante" value="estudante" checked>
+						<label class="form-check-label" for="radioEstudante">
+							Sou estudante
+						</label>
+					</div>
+					<div class="radio-inline">
+						<input class="form-check-input" type="radio" name="ocupacao" id="radioAluno" value="professor">
+						<label class="form-check-label" for="radioAluno">
+							Sou professor
+						</label>
+					</div>
+
+					<button style="outline: none; margin-top: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block" id="cadastrarConta"type="button">Cadastrar conta</button>
+					<hr style="margin-top: 5%; margin-bottom: 5%; border-color: white; width: 80%">
+					<a href="login.html" style="outline: none; margin-top: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block">Já possui conta? Efetue o login</a>
+					<br>
+					<a href="intro.html" style="outline: none; text-decoration: none; margin-bottom: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block">Retornar à página inicial</a>
+
+				</form>
+
+			</div>
+
+			<div class="col-md-4"></div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

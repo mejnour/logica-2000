@@ -1,0 +1,112 @@
+\documentclass[11pt, a4paper]{article}
+
+	% Linguagem e Escrita
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+
+	% Imagens
+\usepackage{tikz}
+
+  % Documentos
+\usepackage{pdfpages}
+
+	% Layout
+\usepackage[some, center]{background}
+\usepackage{geometry}
+	\geometry{paperwidth = 210mm,%
+		      paperheight = 297mm,%
+	    	  layout = a4paper,%s
+	      	textheight = 24cm%
+	      	}
+
+	% Codigo
+\usepackage{listings}
+
+\begin{document}
+
+		% --- Folha de Rosto ---
+
+	\begin{titlepage}
+
+		\SetBgContents{\includegraphics{ufpb.png}}
+		\SetBgScale{.8}
+		\SetBgAngle{0}
+		\SetBgOpacity{0.1}
+		\BgThispage
+
+    	\begin{center}
+
+	        {\sc \Large Universidade Federal da Paraíba - \textbf{U.F.P.B.}; \\
+    	        Centro de Informática - \textbf{C.I.}; \\
+        	    Departamento de Ciência da Computação - \textbf{D.C.C.}, Campus \textbf{V}; \\
+            	Disciplina: Linguagens Formais e Autômatos; \\
+	            Período: 2017.2 \\}
+
+        	\vspace{1cm}
+
+    	    {\sc Professor: Andrei Formiga}
+
+	        \vspace{4cm}
+
+        	{\LARGE \sc Platafotma Web de Estudos \\ {\Large Em Disciplinas Correlatas a Lógica} \\}
+
+					\vspace{3cm}
+
+	        \begin{flushleft}
+
+            	{\sf \sc \large Relatório: \bf{Final} \\}
+
+        	\end{flushleft}
+
+    	    \vspace{2cm}
+
+	        \begin{flushleft}
+
+            	{\sf \sc {\bf Aluno:} José Arnaldo de Assis Pina Neto 									\footnote{Matrícula: 2016064100}\\
+																		Juliano Nunes dos Santos
+																		\footnote{Matrícula: 2016001002}\\
+																		Paulo Henrique Bezerra Matias
+																		\footnote{Matrícula: 2016057509}\\
+																		Renan Ribeiro Lage
+																		\footnote{Matrícula: 2016057509}}
+
+        	\end{flushleft}
+
+    	    \vspace{1.5cm}
+
+	        \sc{João Pessoa,} \\
+        	21 de junho de 2018
+
+    	\end{center}
+	\end{titlepage}
+
+		% ----------------------
+
+	\pagebreak
+
+	% \mainmatter
+
+	\section{Introdução}
+
+		Dentre as disciplinas correlatas à lógica em cursos de graduação para computação, algumas frequentemente apresentam um desafio aos novos ingressantes do ensino superior. Isto, pois, deparam-se com um modo abstrato de tratar questões antes introduzidas através de código em disciplinas de introdução à programação. Não somente em Lógica Aplicada à Computação, mas também em Teoria da Computação e em Linguagens Formais e Autômatos, existe uma curva crescente de abstração e um conhecimento acumulativo que precisa ser constantemente revisitado.\\
+
+		Vindo ao auxílio daqueles que sentem a necessidade anteriormente citada, este projeto visou criar uma plataforma online que serviria como banco de questões, podendo o usuário, ainda, visitar trechos de teoria, trocar ideias com colegas em relação à questões e interagir sobre os temas propostos.\\
+
+		Pensou-se, aos usuários, a possibilidade de se oferecer um serviço que unisse rede social e estudos, de maneira dinâmica, onde o usuário ganharia pontos por questões respondidas. O professor também poderia criar uma conta em que tivesse acesso ao desenvolvimento dos alunos. Este relatório descreve esta empreitada em detalhes: êxitos e falhas.
+
+	\section{Resultados}
+
+		O projeto foi desenvolvido usando HTML5, CSS3 e JavaScript. Encontra-se hospedado neste repositório\footnote{} no GitHub.
+
+	\section{Conclusão}
+
+		Durante o período 2017.2 da UFPB, na disciplina de Linguagens Formais e Autômatos, ministrada pelo Professor Andrei Formiga, foi possível aos alunos terem um primeiro contato com o que há de ponta no desenvolvimento científico relativo à Computação.\\
+
+		Desde uma revisão dos conteúdos baselares, passando por complexidade de algoritmos, entre outros tópicos, ficou claro aos atendentes da disciplina que o universo da computação era muito mais amplo e profundo do que descreviam os pequenos mapas simbólicos da situação dados pelos professores até então.\\
+
+		Assim, a possibilidade de desenvolver um projeto aberto, sem finalidade previamente definida pelo professor, foi uma oportunidade única de explorar ferramentas não usuais nas tradicionais disciplinas do curso, contribuíndo com a experiência que é sanar uma curiosidade e o treinamento profissional auto-imposto.
+
+
+\end{document}

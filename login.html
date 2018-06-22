@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- <<<<<<< HEAD -->
+
+	<title>Login</title>
+<!-- ======= -->
+	<meta charset="utf-8"/>
+	<title>Login - Site</title>
+<!-- >>>>>>> 19a1fd82bb5ff990c7298a349b60bccff864a54b -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./node_modules/js-base64/base64.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	<script>
+
+        // Initialize Firebase
+        let config = {
+            apiKey: "AIzaSyAa3GMkmJv0fH-5m-Nnl6GxZ2CeCg3Vdd4",
+            authDomain: "andrei-s-razor.firebaseapp.com",
+            databaseURL: "https://andrei-s-razor.firebaseio.com",
+            projectId: "andrei-s-razor",
+            storageBucket: "",
+            messagingSenderId: "43473021256"
+        };
+        firebase.initializeApp(config);
+		let database = firebase.database();
+        $( document ).ready(function() {
+            $( "#btnLogin" ).click(function( event ) {
+                let email = $("#loginEmail").val();
+                let password = $("#loginSenha").val();
+                firebase.auth().signInWithEmailAndPassword(email, password)
+					.then(() => {
+					    let oc = database.ref('users/'+Base64.encode(email));
+					    oc.on('value', (snapshot) => {
+                            if(snapshot.val().ocupacao === "estudante") {
+                                $(location).attr('href', './homeestudante.html');
+                            }
+                            else {
+                                $(location).attr('href', './homeprofessor.html');
+                            }
+                            alert("Usuário logado!");
+                        });
+
+					})
+					.catch(function(error) {
+                    // Handle Errors here.
+                    let errorCode = error.code;
+                    let errorMessage = error.message;
+                    alert(errorCode +"\n"+errorMessage);
+                    // ...
+                });
+            });
+        });
+
+	</script>
+
+	<style type="text/css">
+
+		@media screen and (max-width: 767px){
+
+		}
+
+		html, body{
+			height:100%;
+		}
+
+	</style>
+
+</head>
+<body background="img/background.jpg" style="background-repeat: no-repeat; background-size: cover; overflow: auto;">
+
+	<script src="navibar.js"></script>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4"></div>
+
+			<div class="col-md-4" style="margin-top: 5%; margin-bottom: 5%; padding-bottom: 5px; background-color: rgba(255, 255, 255, 0.1); border-radius: 10px 10px 10px 10px; color: white;">
+
+				<form style="padding-top: 10%; color: white" align="center">
+
+					<div class="form-group">
+						<label for="loginEmail">E-mail</label>
+						<input type="email" class="form-control" id="loginEmail" placeholder="Digite seu e-mail">
+					</div>
+
+					<div class="form-group">
+						<label for="loginSenha">Senha</label>
+						<input type="password" class="form-control" id="loginSenha" placeholder="Digite sua senha">
+					</div>
+
+					<button type="button" style="outline: none; margin-top: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block" id="btnLogin">Logar no site</button>
+					<hr style="margin-top: 5%; margin-bottom: 5%; border-color: white; width: 80%">
+					<a href="registrar.html" style="outline: none; margin-top: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block">Não possui conta? Registre-se</a>
+					<br>
+					<a href="intro.html" style="outline: none; text-decoration: none; margin-bottom: 5%; background-color: #f46241; border: none; border-radius: 20px" class="btn btn-primary btn-block">Retornar à página inicial</a>
+
+				</form>
+
+			</div>
+
+			<div class="col-md-4"></div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
