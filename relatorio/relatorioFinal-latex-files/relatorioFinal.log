@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.5.28)  21 JUN 2018 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.5.28)  21 JUN 2018 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -944,35 +944,166 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
+<print1.png, id=22, 459.7175pt x 215.80624pt>
+File: print1.png Graphic file (type png)
+ <use print1.png>
+Package pdftex.def Info: print1.png used on input line 109.
+(pdftex.def)             Requested size: 275.83263pt x 129.48474pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[1] (./relatorioFinal.aux) ) 
+<print1-1.png, id=23, 1352.05125pt x 811.03pt>
+File: print1-1.png Graphic file (type png)
+ <use print1-1.png>
+Package pdftex.def Info: print1-1.png used on input line 117.
+(pdftex.def)             Requested size: 270.40546pt x 162.20313pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1 <./print1.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+
+<print2.png, id=31, 1352.05125pt x 748.7975pt>
+File: print2.png Graphic file (type png)
+ <use print2.png>
+Package pdftex.def Info: print2.png used on input line 142.
+(pdftex.def)             Requested size: 405.6185pt x 224.64098pt.
+ [2 <./print1-1.png> <./print2.png>] <print3.png, id=38, 1352.05125pt x 811.03p
+t>
+File: print3.png Graphic file (type png)
+
+<use print3.png>
+Package pdftex.def Info: print3.png used on input line 152.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 152--153
+ [][] 
+ []
+
+<print4.png, id=39, 1352.05125pt x 811.03pt>
+File: print4.png Graphic file (type png)
+ <use print4.png>
+Package pdftex.def Info: print4.png used on input line 160.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
+
+[3 <./print3.png> <./print4.png>] <print5.png, id=45, 1352.05125pt x 811.03pt>
+File: print5.png Graphic file (type png)
+
+<use print5.png>
+Package pdftex.def Info: print5.png used on input line 170.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 170--171
+ [][] 
+ []
+
+<print6.png, id=46, 1352.05125pt x 811.03pt>
+File: print6.png Graphic file (type png)
+ <use print6.png>
+Package pdftex.def Info: print6.png used on input line 178.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 178--179
+ [][] 
+ []
+
+<print7.png, id=47, 1352.05125pt x 811.03pt>
+File: print7.png Graphic file (type png)
+ <use print7.png>
+Package pdftex.def Info: print7.png used on input line 186.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+[4 <./print5.png> <./print6.png>] <print8.png, id=53, 1352.05125pt x 811.03pt>
+File: print8.png Graphic file (type png)
+
+<use print8.png>
+Package pdftex.def Info: print8.png used on input line 194.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 194--195
+ [][] 
+ []
+
+<print9.png, id=54, 1352.05125pt x 811.03pt>
+File: print9.png Graphic file (type png)
+ <use print9.png>
+Package pdftex.def Info: print9.png used on input line 202.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 202--203
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<print10.png, id=55, 1352.05125pt x 811.03pt>
+File: print10.png Graphic file (type png)
+ <use print10.png>
+Package pdftex.def Info: print10.png used on input line 210.
+(pdftex.def)             Requested size: 432.66524pt x 259.5349pt.
+
+Overfull \hbox (14.41156pt too wide) in paragraph at lines 210--211
+ [][] 
+ []
+
+[5 <./print7.png> <./print8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+[6 <./print9.png> <./print10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+[7] (./relatorioFinal.aux) ) 
 Here is how much of TeX's memory you used:
- 15327 strings out of 493013
- 287637 string characters out of 6135682
- 338373 words of memory out of 5000000
- 18546 multiletter control sequences out of 15000+600000
- 19153 words of font info for 42 fonts, out of 8000000 for 9000
+ 15401 strings out of 493013
+ 288730 string characters out of 6135682
+ 339373 words of memory out of 5000000
+ 18605 multiletter control sequences out of 15000+600000
+ 19842 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,54p,601b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super
--t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc10
-95.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm060
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1440
-.pfb>
-Output written on relatorioFinal.pdf (2 pages, 342033 bytes).
+-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfxc1440.pfb>
+Output written on relatorioFinal.pdf (8 pages, 2807641 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
